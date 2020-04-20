@@ -1,6 +1,7 @@
 const http = require('http');
 const url = require('url');
 const path = require("path");
+const atob = require('atob');
 const fs = require('fs');
 const tmpdir = require('os').tmpdir();
 const child_process = require('child_process');
@@ -29,7 +30,7 @@ function lilypond_to_svg(lilypond) {
 
 http.createServer((req, res) => {
   try {
-    const data = (url.parse(req.url,true).query.data);
+    const data = atob(url.parse(req.url,true).query.data);
     res.writeHead(200, { 'Content-Type': 'image/svg+xml' });
     res.end(lilypond_to_svg(data));
   } catch (e) {

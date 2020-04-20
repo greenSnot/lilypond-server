@@ -1,0 +1,22 @@
+{
+  "name": "lilypond-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenSnot/lilypond-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenSnot/lilypond-server/issues"
+  },
+  "homepage": "https://github.com/greenSnot/lilypond-server#readme",
+  "devDependencies": {
+    "atob": "^2.1.2"
+  }
+}
